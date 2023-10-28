@@ -14,7 +14,7 @@ public final class EventListeners {
     public static void onSceneBlockLoad(SceneBlockLoadedEvent event) {
         var sh = SceneHook.getInstance();
 
-        var block = event.block;
+        var block = event.getBlock();
         var sceneId = block.sceneId;
 
         if (sh.hasSceneHook(sceneId)) {
@@ -61,11 +61,11 @@ public final class EventListeners {
     public static void onSceneMetaLoad(SceneMetaLoadEvent event) {
         var sh = SceneHook.getInstance();
 
-        var scene = event.scene;
+        var scene = event.getScene();
         var sceneId = scene.getId();
 
         if (sh.hasSceneHook(sceneId)) {
-            event.hasOverride = true;
+            event.setOverride(true);
             scene.runWhenFinished(() -> {
                 for (var replacement : sh.getBlockReplacement(sceneId).replacements) {
                     sh.getLogger().info("onSceneMetaLoad: Loading scene {} dynamic group {}", sceneId, replacement.newSceneGroup);
