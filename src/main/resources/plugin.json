@@ -1,0 +1,14 @@
+{
+  "name": "SceneHook",
+  "description": "Make your own abyss floors",
+  "version": "1.0.0",
+  "authors": [ "longfruit" ],
+  "api": 2,
+
+  "mainClass": "longfruit.grasscutters.SceneHook.SceneHook",
+
+  "comments": [
+    "In case vanilla abyss is too easy or punching bags for your C6R5 team are needed.",
+    "Contributions welcome."
+  ]
+}

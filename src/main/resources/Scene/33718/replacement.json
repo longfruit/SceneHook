@@ -1,0 +1,13 @@
+{
+  "replacements":
+  [
+    {
+      "replacedSceneGroup": 233718006,
+      "newSceneGroup": 233718106
+    },
+    {
+      "replacedSceneGroup": 233718007,
+      "newSceneGroup": 233718107
+    }
+  ]
+}
